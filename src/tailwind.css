@@ -1,0 +1,10 @@
+/* src/index.css or src/tailwind.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* If you want to use @apply */
+body {
+  @apply bg-gray-500; /* Tailwind class applied to body */
+}
+
