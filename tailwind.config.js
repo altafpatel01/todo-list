@@ -5,7 +5,7 @@ module.exports = {
     theme: {
       
       screens: {
-        'between': {'min':'220px' , 'max':'420px'},
+        'between': {'min':'200px' , 'max':'420px'},
         'medium': {'min':'420px' , 'max':'730px'},
       },
     },
