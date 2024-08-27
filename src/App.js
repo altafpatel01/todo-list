@@ -1,5 +1,9 @@
-import logo from './logo.svg';
+
+import Firstpart from './Components/Firstpart';
+import Secondpart from './Components/Secondpart';
+import { useState,useEffect } from 'react';
 import './App.css';
+
 
 function App() {
   const [addtask, settask] = useState([]);
@@ -56,22 +60,11 @@ function App() {
 
   
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Firstpart handleaddtask={handleaddtask} inputvalue={inputvalue} handlesetinputvalue={handlesetinputvalue} />
+    <Secondpart addtask={addtask} deletetask={deletetask} handleCheckboxChange={handleCheckboxChange}/>
+    
+    </>
   );
 }
 
