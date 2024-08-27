@@ -12,7 +12,7 @@ function Secondpart({ addtask, deletetask, handleCheckboxChange }) {
                between:flex-col between:justify-center between:items-center text-xl between:text-xs medium:text-xs between:py-4 between:gap-4 w-2/3 h-16 mx-auto px-5
                 bg-white flex flex-row justify-between items-center`}
             >
-              <p className=" truncate between:truncate w-full between:text-wrap text-wrap flex flex-row items-start my-auto  h-full py-2 ">
+              <p className=" truncate between:overflow-x-scroll between:truncate w-full between:text-wrap text-wrap flex flex-row items-start my-auto  h-full py-2 ">
                 {task.contents}
               </p>
               <div className="space-x-1 flex flex-row">
