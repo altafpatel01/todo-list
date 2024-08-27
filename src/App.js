@@ -2,6 +2,7 @@
 import Firstpart from './Components/Firstpart';
 import Secondpart from './Components/Secondpart';
 import { useState,useEffect } from 'react';
+import './tailwind.cs'
 import './App.css';
 
 
