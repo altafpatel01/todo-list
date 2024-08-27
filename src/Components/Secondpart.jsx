@@ -3,7 +3,7 @@ import React from "react";
 function Secondpart({ addtask, deletetask, handleCheckboxChange }) {
   return (
     <>
-      <div className=" custom-range mx-auto px-5 mt-12 flex flex-col  gap-3 ">
+      <div className=" custom-range mx-auto px-5 mt-12 flex flex-col mb-10  gap-3 ">
         {addtask.map((task, index) => {
           return (
             <div
@@ -20,13 +20,13 @@ function Secondpart({ addtask, deletetask, handleCheckboxChange }) {
                   onClick={() => {
                     deletetask(index);
                   }}
-                  className="bg-gray-500 px-2 border rounded-sm text-white"
+                  className="bg-gray-500 px-2 between:p-4  border rounded-sm text-white"
                 >
                   Delete
                 </button>
                 <input
                   onChange={() => handleCheckboxChange(task.id)}
-                  className="between:absolute between:top-3 between:right-3"
+                  className="between:absolute between:top-2 between:right-3"
                   checked={task.checked}
                   type="checkbox"
                   name=""
