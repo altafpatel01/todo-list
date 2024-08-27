@@ -20,7 +20,7 @@ function Secondpart({ addtask, deletetask, handleCheckboxChange }) {
                   onClick={() => {
                     deletetask(index);
                   }}
-                  className="bg-gray-500 px-2 between:p-4  border rounded-sm text-white"
+                  className="bg-gray-500 px-2 between:py-1.5 between:text-[15px] border rounded-sm text-white"
                 >
                   Delete
                 </button>
